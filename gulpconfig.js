@@ -22,10 +22,10 @@ module.exports = {
 
   browsersync: {
     files: [build+'/**', '!'+build+'/**.map'] // Exclude map files
-  , notify: false // In-line notifications (the blocks of text saying whether you are connected to the BrowserSync server or not)
-  , open: true // Set to false if you don't like the browser window opening automatically
+  , notify: true // In-line notifications (the blocks of text saying whether you are connected to the BrowserSync server or not)
+  , open: false // Set to false if you don't like the browser window opening automatically
   , port: 3000 // Port number for the live version of the site; default: 3000
-  , proxy: 'localhost:8080' // Using a proxy instead of the built-in server as we have server-side rendering to do via WordPress
+  , proxy: 'localhost/child' // Using a proxy instead of the built-in server as we have server-side rendering to do via WordPress
   , watchOptions: {
       debounceDelay: 2000 // Delay for events called in succession for the same file/event
     }
@@ -95,6 +95,7 @@ module.exports = {
   , libsass: { // Requires the libsass implementation of Sass
       includePaths: [bower] // Adds the `bower_components` directory to the load path so you can @import directly
     , precision: 6
+    , sourceComments: true
     }
   },
 
@@ -126,6 +127,6 @@ module.exports = {
     , theme:        src+'**/*.php'
     , livereload:   [build+'**/*']
     }
-  , watcher: 'livereload' // Who watches the watcher? Easily switch between BrowserSync ('browsersync') and Livereload ('livereload')
+  , watcher: 'browsersync' // Who watches the watcher? Easily switch between BrowserSync ('browsersync') and Livereload ('livereload')
   }
 }
