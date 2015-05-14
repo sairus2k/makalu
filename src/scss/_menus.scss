@@ -15,7 +15,7 @@
       }
     }
     > li > ul {
-      @extend %hide; // Hide submenus for the sake of simplicity; obviously you'd want to remove this when you apply your own styling
+//      @extend %hide; // Hide submenus for the sake of simplicity; obviously you'd want to remove this when you apply your own styling
     }
   }
 }

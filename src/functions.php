@@ -21,6 +21,10 @@ function voidx_setup() {
 
   // HTML5 support; mainly here to get rid of some nasty default styling that WordPress used to inject
   add_theme_support( 'html5', array( 'search-form', 'gallery' ) );
+  
+  // Enable featured images
+  add_theme_support( 'post-thumbnails' );
+  add_image_size( 'index-thumb', 500, 400, true );
 
   // $content_width limits the size of the largest image size available via the media uploader
   // It should be set once and left alone apart from that; don't do anything fancy with it; it is part of WordPress core
@@ -48,3 +52,10 @@ function voidx_widgets_init() {
   ) );
 }
 add_action( 'widgets_init', 'voidx_widgets_init' );
+
+//FontAwesome
+wp_enqueue_style('makalu_fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+//PT Sans
+wp_enqueue_style('makalu_pt_sans', '//fonts.googleapis.com/css?family=PT+Sans:400,700');
+//scripts
+wp_enqueue_script( 'makalu-core', get_template_directory_uri() . '/js/wp-core.js', array(), '20150514', true );

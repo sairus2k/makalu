@@ -8,8 +8,8 @@ $width-left:    650px;
 $width-right:   350px;
 
 // Breakpoints
-$break-small:   480px;
-$break-medium:  620px;
+$break-small:   360px;
+$break-medium:  640px;
 $break-large:   800px;
 
 // A standard margin
@@ -18,7 +18,8 @@ $spacer:        30px;
 // A modest palette; see `_library.scss` for the color() function
 $color: (
   text: #333,
-  link: steelblue,
+  link: #00aeff,
+  font: #626262,
   link-muted: steelblue,
   body-background: white
 );

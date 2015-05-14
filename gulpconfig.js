@@ -1,7 +1,7 @@
 // ==== CONFIGURATION ==== //
 
 // Project paths
-var project     = 'voidx'
+var project     = 'makalu'
   , src         = './src/'
   , build       = './build/'
   , dist        = './dist/'+project+'/'
@@ -124,7 +124,7 @@ module.exports = {
       styles:       src+'scss/**/*.scss'
     , scripts:      [src+'js/**/*.js', bower+'**/*.js']
     , images:       src+'**/*(*.png|*.jpg|*.jpeg|*.gif)'
-    , theme:        src+'**/*.php'
+    , theme:        [src+'**/*.php', src+'*.php']
     , livereload:   [build+'**/*']
     }
   , watcher: 'browsersync' // Who watches the watcher? Easily switch between BrowserSync ('browsersync') and Livereload ('livereload')

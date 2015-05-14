@@ -17,6 +17,11 @@
     padding-left: spacer(2);
     padding-right: spacer(2);
   }
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 .wrap-main { // Wrapper around content and sidebar
   @extend %clearfix;
@@ -55,7 +60,7 @@
     padding-right: spacer(2);
   }
 }
-.site-header,
+//.site-header,
 .site-footer {
   @include scut-center-block($width-site);
 }

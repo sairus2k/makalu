@@ -20,16 +20,16 @@
   }
 }
 @mixin media-above($min-query) {
-  @include media($min-query, null) { @content; }
+  @include media($min-query + 1, null) { @content; }
 }
 @mixin media-below($max-query) {
-  @include media(null, $max-query - 1) { @content; }
+  @include media(null, $max-query) { @content; }
 }
 @mixin media-between($min-query: null, $max-query: null) {
   @if $min-query == null or $max-query == null {
     @warn "Mixin media-between() received a null value."
   }
-  @include media($min-query, $max-query - 1) { @content; }
+  @include media($min-query + 1, $max-query) { @content; }
 }
 
 

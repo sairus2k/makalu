@@ -1,20 +1,21 @@
 /*!
-Theme Name: Voidx
-Theme URI: https://github.com/synapticism/wordpress-gulp-bower-sass
-Author: Alexander Synaptic
-Author URI: http://synapticism.com
+Theme Name: Makalu
+Theme URI: https://github.com/sairus2k/makalu
+Author: Anton Savoskin
+Author URI: http://savoskin.tk
 Description:
-Version: 0.0.4
+Version: 2.0.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
-Tags: light, responsive-layout, right-sidebar, starter-theme, two-column, translation-ready, white
+Tags: light, responsive-layout, right-sidebar, two-column, translation-ready
 Text Domain:
 Domain Path: /languages/
 */
 
 @import "loader";
 @import "general";
-@import "layout";
-@import "menus";
+//@import "layout";
+@import "header";
+//@import "menus";
 @import "navigation";
 @import "sidebar";
