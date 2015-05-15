@@ -1,12 +1,20 @@
 .wrap-header {
   header {
-
+    padding: 0 10px;
     max-width: $width-site;
     margin: auto;
     .site-branding {
       display: flex;
       justify-content: space-around;
     } //.site-branding
+    .site-navigation {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      #responsive-menu {
+        flex-basis: 340px;
+      }
+    } //site-navigation
     h1 {
       text-transform: uppercase;
       font-family: 'PT Sans';
@@ -33,6 +41,12 @@
     } //menu button
     @include media-above($break-small) {
       min-height: 120px;
+      .site-navigation {
+        align-items: baseline;
+        #responsive-menu {
+          flex-basis: auto;
+        }
+      }
       #responsive-menu-toggle {
         display: none;
       } //hide button
@@ -72,8 +86,9 @@
           text-decoration: none;
           letter-spacing: 1px;
           text-shadow: 0 0 1px rgba(255,255,255,0.3);
-          margin: 0 15px;
+
           padding: 0;
+
           &::after {
             position: absolute;
             top: 100%;
@@ -93,7 +108,11 @@
         } //a
         li {
           border: none;
-          display: block;
+          display: inline-block;
+          margin: 0 15px;
+          &:last-child {
+            margin-right: 0;
+          } //last-child
         } //li
         #responsive-menu {
           display: block;
@@ -109,6 +128,44 @@
     } //header
   } //media-above small
 } //.wrap-header
+
+
+//Search form from bookmate.com
+.header-search-form {
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 30px;
+  margin: 10px 0 10px 20px;
+  background: lighten(color(light), 5);
+}
+.header-search-form-input {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  border: medium none;
+  outline: medium none;
+  font-style: italic;
+  background: transparent none repeat scroll 0% 0%; 
+}
+
+.header-search-form-button {
+  position: absolute;
+  bottom: 2px;
+  right: 6px;
+  border: medium none;
+  background: transparent none repeat scroll 0% 0%; 
+  margin: 0px;
+  padding: 0px;
+  color: #c1c1c1;
+  width: 17px;
+  cursor: pointer;
+}
+.header-search-form-button:before {
+  content: '\f002';
+  font-family: FontAwesome;
+  font-size: 1.1em;
+}
 .wrap-main {
   background: color(font);
 }
