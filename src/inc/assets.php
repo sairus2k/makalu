@@ -46,6 +46,9 @@ if ( !function_exists( 'voidx_enqueue_scripts' ) ) : function voidx_enqueue_scri
   // Load theme-specific JavaScript bundles with versioning based on last modified time; http://www.ericmmartin.com/5-tips-for-using-jquery-with-wordpress/
   // The handle is the same for each bundle since we're only loading one script; if you load others be sure to provide a new handle
   wp_enqueue_script( $script_handle, get_stylesheet_directory_uri() . '/js/' . $ns . $script_name . $suffix . '.js', array( 'jquery' ), filemtime( get_template_directory() . '/js/' . $ns . $script_name . $suffix . '.js' ), true );
+  
+  //scripts
+wp_enqueue_script( 'makalu-core', get_template_directory_uri() . '/js/wp-core.js', array(), '20150514', true );
 
   // Pass variables to JavaScript at runtime; see: http://codex.wordpress.org/Function_Reference/wp_localize_script
   $script_vars = apply_filters( 'voidx_script_vars', $script_vars );

@@ -57,8 +57,8 @@ module.exports = {
     , pg8: ['pg8', 'core']
     }
   , chunks: { // Chunks are arrays of globs matching source files that combine to provide specific functionality
-      core: [src+'js/navigation.js', src+'js/core.js']
-    , pg8: [bower+'html5-history-api/history.js', bower+'spin.js/spin.js', bower+'spin.js/jquery.spin.js', bower+'wp-ajax-page-loader/wp-ajax-page-loader.js', src+'js/page-loader.js']
+      core: [src+'js/navigation.js', src+'js/core.js', src+'js/unslider.js']
+    , pg8: [bower+'html5-history-api/history.js', bower+'spin.js/spin.js', bower+'spin.js/jquery.spin.js', bower+'wp-ajax-page-loader/wp-ajax-page-loader.js', src+'js/page-loader.js', bower+'unslider/src/unslider.js']
     }
   , dest: build+'js/' // Where the scripts end up
   , lint: {
