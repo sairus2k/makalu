@@ -4,6 +4,8 @@ Based on free PSD template [bluebox](http://www.graphicsfuel.com/2013/07/bluebox
 * [WORDPRESS-GULP-BOWER-SASS Starter Kit](https://github.com/synapticism/wordpress-gulp-bower-sass)
 * [FontAwesome](http://fontawesome.io/)
 * [GoogleFont](https://www.google.com/fonts)
+* [Unslider](http://unslider.com/)
+* [jQuery.event.move](http://stephband.info/jquery.event.move/)
 
 ## ToDo list:
 - [ ] fix width banner image
