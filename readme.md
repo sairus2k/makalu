@@ -10,3 +10,5 @@ Based on free PSD template [bluebox](http://www.graphicsfuel.com/2013/07/bluebox
 ## ToDo list:
 - [ ] fix width banner image
 - [ ] slow on mobile device
+- [ ] add favicon
+- [ ] firefox troubles
