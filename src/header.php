@@ -10,6 +10,7 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
+   <?php include_once("analytics.php") ?>
     <div id="page" class="hfeed site">
       <div id="wrap-header" class="wrap-header">
         <header id="masthead" class="site-header" role="banner">

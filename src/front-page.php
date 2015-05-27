@@ -94,9 +94,16 @@
   </div><!-- .indent -->
 </section><!-- #services -->
 
-<section id="flightsearch">
+<section id="flightsearch" class="flightsearch">
   <div class="container">
-    Aviasales
+   <h2 class="section-title">Найти билеты</h2>
+    <?php if (wp_is_mobile()) {
+      echo '<!--mobile form--><iframe scrolling="no" width="280" height="291" frameborder="0" src="//www.travelpayouts.com/widgets/9878df137cb667a5d280915bfb8b53b6.html?v=468"></iframe>';
+    } else {
+      echo '<!--desktop form--><iframe scrolling="no" width="940" height="252" frameborder="0" src="//www.travelpayouts.com/widgets/76de386357c8f97062487c1f35df872d.html?v=468"></iframe>';
+    }?>
+
+
   </div><!--container-->
 </section><!--flightsearch-->
 <?php get_footer(); ?>
