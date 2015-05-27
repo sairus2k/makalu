@@ -13,7 +13,7 @@
       flex-wrap: wrap;
       #responsive-menu {
         flex-basis: 340px;
-      }
+      } //#responsive-menu
     } //site-navigation
     h1 {
       text-transform: uppercase;
@@ -45,14 +45,13 @@
         align-items: baseline;
         #responsive-menu {
           flex-basis: auto;
-        }
-      }
+        } //#responsive-menu
+      } //.site-navigation
       #responsive-menu-toggle {
         display: none;
       } //hide button
     } //media above small
     nav {
-
       #responsive-menu {
         display: none;
       } //hide menu by default
@@ -128,7 +127,6 @@
     } //header
   } //media-above small
 } //.wrap-header
-
 
 //Search form from bookmate.com
 .header-search-form {

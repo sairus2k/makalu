@@ -21,7 +21,7 @@ function voidx_setup() {
 
   // HTML5 support; mainly here to get rid of some nasty default styling that WordPress used to inject
   add_theme_support( 'html5', array( 'search-form', 'gallery' ) );
-  
+
   // Enable featured images
   add_theme_support( 'post-thumbnails' );
   add_image_size( 'index-thumb', 500, 400, true );
@@ -58,3 +58,11 @@ add_action( 'widgets_init', 'voidx_widgets_init' );
 wp_enqueue_style('makalu_fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 //PT Sans
 wp_enqueue_style('makalu_pt_sans', '//fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+//post filters on frontpage
+function new_excerpt_more( $more ) {
+  return '<a class="read-more" href="' . get_permalink() . '">' . __( 'Read More', 'your-text-domain' ) . '</a>';
+}
+function custom_excerpt_length( $length ) {
+  return 50;
+}
