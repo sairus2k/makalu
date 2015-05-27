@@ -21,7 +21,7 @@
         echo '<h3 class="banner-header">' . get_the_title() . '</h3>';
         echo '<div class="banner-excerpt">';
         the_excerpt('');
-        echo '<a class="btn" href="' .  get_permalink( ) . '" title="Learn more about ' . get_the_title() . '">Read more</a>';
+        echo '<a class="btn" href="' .  get_permalink( ) . '" title="Learn more about ' . get_the_title() . '">Подробнее</a>';
         echo '</div>';
         echo '</aside>';
         echo '</li>';
@@ -74,7 +74,7 @@
           the_post_thumbnail();
           echo '</figure>';
           echo '<article class="service-article">';
-          echo '<a href="' . get_permalink() . '" title="Learn more about ' . get_the_title() . '">';
+          echo '<a href="' . get_permalink() . '" title="Узнать больше про ' . get_the_title() . '">';
           echo '<h3 class="services-title">' . get_the_title() . '</h3>';
           echo '</a>';
           echo '<div class="services-text">';

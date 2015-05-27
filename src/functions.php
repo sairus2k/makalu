@@ -61,7 +61,7 @@ wp_enqueue_style('makalu_pt_sans', '//fonts.googleapis.com/css?family=PT+Sans:40
 
 //post filters on frontpage
 function new_excerpt_more( $more ) {
-  return '<a class="read-more" href="' . get_permalink() . '">' . __( 'Read More', 'your-text-domain' ) . '</a>';
+  return ' [...]<a class="read-more" href="' . get_permalink() . '">' . __( 'Подробнее', 'your-text-domain' ) . '</a>';
 }
 function custom_excerpt_length( $length ) {
   return 50;

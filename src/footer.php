@@ -2,7 +2,7 @@
       <div id="wrap-footer" class="wrap-footer">
         <footer id="colophon" class="site-footer" role="contentinfo">
          <div class="site-info">
-           <p>&copy; <?php echo date("Y"); ?> Travel Agency &laquo;Makalu&raquo;</p>
+           <p>&copy; <?php echo date("Y"); ?> Туристическое агентство &laquo;Макалу&raquo;</p>
          </div>
           <nav id="site-footer-navigation" role="navigation">
             <?php wp_nav_menu( array( 
