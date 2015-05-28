@@ -69,7 +69,7 @@
         echo '<ul class="services-list">';
         while ( $services_query->have_posts() ) {
           $services_query->the_post();
-          echo '<li>';
+          echo '<li class="service-item">';
           echo '<figure>';
           the_post_thumbnail();
           echo '</figure>';

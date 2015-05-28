@@ -66,3 +66,6 @@ function new_excerpt_more( $more ) {
 function custom_excerpt_length( $length ) {
   return 50;
 }
+function custom_excerpt_length_100( $length ) {
+  return 100;
+}

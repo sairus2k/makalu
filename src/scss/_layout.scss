@@ -4,7 +4,7 @@
 // There is also a fifth meta-wrapper to bind content and sidebar on large screens
 
 // A general wrapper for various site elements
-%wrap {
+/*%wrap {
   box-sizing: border-box; // Makes life a little easier
   padding: 0 spacer() 0 spacer();
 }
@@ -81,4 +81,9 @@
 }
 .alignleft {
   float: left;
+}*/
+
+.wrap-main .container {
+  max-width: $width-site;
+  margin: 0 auto;
 }
