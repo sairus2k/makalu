@@ -36,3 +36,4 @@ vendor
 build
 dist
 _normalize.scss
+.brackets.json
