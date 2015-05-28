@@ -8,7 +8,7 @@ Based on free PSD template [bluebox](http://www.graphicsfuel.com/2013/07/bluebox
 * [jQuery.event.move](http://stephband.info/jquery.event.move/)
 
 ## ToDo list:
-- [ ] fix width banner image
+- [x] fix width banner image
 - [ ] slow on mobile device
-- [ ] add favicon
-- [ ] firefox troubles
+- [x] add favicon
+- [x] firefox troubles (Google fonts)

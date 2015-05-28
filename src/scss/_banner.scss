@@ -43,6 +43,11 @@
     border: 2px solid rgba(255, 255, 255, 0.4);
     border-radius: 5px;
   } //.btn
+  @include media-above($break-large) {
+    li figure img {
+      width: 100%;
+    } // li figure img
+  } //media above large
 } //.banner
 
 .dots {

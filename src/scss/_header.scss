@@ -40,9 +40,10 @@
       margin: auto;
     } //menu button
     @include media-above($break-small) {
-      min-height: 120px;
+//      min-height: 120px;
+      padding: 30px 10px;
       .site-navigation {
-        align-items: baseline;
+        align-items: center;
         #responsive-menu {
           flex-basis: auto;
         } //#responsive-menu
@@ -144,7 +145,7 @@
   border: medium none;
   outline: medium none;
   font-style: italic;
-  background: transparent none repeat scroll 0% 0%; 
+  background: transparent none repeat scroll 0% 0%;
 }
 
 .header-search-form-button {
