@@ -9,10 +9,10 @@
               <header class="entry-header">
                 <h1><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
               </header>
-              <footer class="entry-meta">
-                <?php printf( __( 'Posted on %1$s by %2$s. ', 'voidx' ), get_the_date(), get_the_author() ); ?>
+              <!--<footer class="entry-meta">
+                <?php printf( __( 'Добавлено %1$s. ', 'voidx' ), get_the_date() ); ?>
                 <?php _e( 'Categories: ', 'voidx' ); the_category( ', ' ); echo '. '; ?>
-              </footer>
+              </footer>-->
               <div class="entry-content">
                 <?php the_content(); ?>
                 <?php wp_link_pages(); ?>
@@ -35,5 +35,5 @@
       </section>
     </div>
   </div>
-<?php get_sidebar(); ?>
+<!--<?php get_sidebar(); ?>-->
 <?php get_footer(); ?>

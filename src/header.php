@@ -25,7 +25,7 @@
           <nav id="site-navigation" class="site-navigation" role="navigation">
 
             <div id="responsive-menu"><?php wp_nav_menu( array( 'theme_location' => 'header', 'menu_id' => 'menu-header', 'menu_class' => 'menu-inline' ) ); ?></div>
-            <form class="header-search-form" role="header-search-form" method="get" action="/child">
+            <form class="header-search-form" role="header-search-form" method="get" action="/">
 
               <input id="query" class="header-search-form-input" type="text" value="" role="search-input" placeholder="Поиск" name="s" data-search="" autocomplete="off"></input>
 

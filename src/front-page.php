@@ -34,7 +34,7 @@
   ?>
 </section><!--hottours-->
 <section id="services" class="services">
-  <div class="container">
+  <div class="wrap-content">
     <?php 
       $query = new WP_Query( 'pagename=services' );
       $services_id = $query->queried_object->ID;

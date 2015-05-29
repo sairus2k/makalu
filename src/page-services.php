@@ -1,24 +1,9 @@
 <?php get_header(); ?>
  <section id="services" class="page-services">
-  <div class="container">
+  <div class="wrap-content">
     <?php 
       $query = new WP_Query( 'pagename=services' );
       $services_id = $query->queried_object->ID;
-
-      // The Loop for title
-      if ( $query->have_posts() ) {
-        while ( $query->have_posts() ) {
-          $query->the_post();
-          $more = 0;
-          echo '<h2 class="section-title">' . get_the_title() . '</h2>';
-          echo '<div class="entry-content">';
-          the_content('');
-          echo '</div>';
-        }
-      }
-
-      /* Restore original Post Data */
-      wp_reset_postdata();
       /*Get the children of the services page*/
       $args = array(
         'posts_per_page' => 4,
@@ -45,9 +30,6 @@
           echo '</a>';
           echo '<div class="services-text">';
           the_content('Read more');
-//          the_excerpt();
-
-          
           echo '</div>';
           echo '</article>';
           echo '</li>';
