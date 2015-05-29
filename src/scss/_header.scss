@@ -18,14 +18,13 @@
     h1 {
       text-transform: uppercase;
       font-family: 'PT Sans', Arial, sans-serif;
-      font-weight: 700;
-      // margin: auto;
+       margin: 0;
       span:before {
         color: color(link);
         content: '\f0f2';
         font-family: FontAwesome;
         font-size: 1.3em;
-        font-weight: normal;
+        font-weight: weight(normal);
         padding-right: 20px;
         vertical-align: baseline;
       } //span:before // logo

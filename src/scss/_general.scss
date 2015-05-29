@@ -15,11 +15,20 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
+  font-weight: weight(bold);
   line-height: 1.22222;
 }
 h1 {
   font-size: 2em;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 a {
   border: 0;

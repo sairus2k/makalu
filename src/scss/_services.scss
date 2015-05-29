@@ -1,11 +1,6 @@
 .services {
   background: color(light);
   padding: 3rem 0;
-  h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-  } //h2
   &-list {
     background: color(white);
     li.service-item {
@@ -25,11 +20,6 @@
       article {
         padding: 1rem;
         box-sizing: border-box;
-        h3 {
-          font-size: 1.5rem;
-          font-weight: bold;
-          margin-bottom: 1rem;
-        } //h3
         .services-text a {
           color: color(link);
           display: block;
@@ -42,10 +32,26 @@
     } //li
   } //.services-list
 } //.services
+.page-services {
+  figure {
+    text-align: center;
+  }
+  h2 {
+    margin-top: 1rem;
+  } //h3
+  h3 {
+    margin-top: 1rem;
+  } //h3
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  article {
+    padding: .5rem;
+  }
+} //.page-services
 .flightsearch {
   .container {
-    //    font-size: 0;
-    //    padding-top: 2rem;
     max-width: 280px;
     margin: 0 auto 0;
     overflow: hidden;
@@ -54,8 +60,6 @@
     } //media above large
     h2 {
       margin: 2rem 0;
-      font-size: 2rem;
-      font-weight: bold;
     } //h2
   } //.container
   iframe {

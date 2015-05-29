@@ -31,7 +31,7 @@
           echo '<div class="services-text">';
           the_content('Read more');
           echo '</div>';
-          echo '</article>';
+          echo '</article><hr>';
           echo '</li>';
         }
         echo '</ul>';

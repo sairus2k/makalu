@@ -49,3 +49,7 @@
 @function color($request) {
   @return map-get($color, $request);
 }
+
+@function weight($request) {
+  @return map-get($weight, $request);
+}
