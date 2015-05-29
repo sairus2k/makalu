@@ -32,7 +32,8 @@
     } //li
   } //.services-list
 } //.services
-.page-services {
+.page-services,
+.site-main {
   figure {
     text-align: center;
   }
@@ -45,10 +46,20 @@
   hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
-  }
+  } //hr
   article {
-    padding: .5rem;
-  }
+    margin: .5rem;
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 1rem;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 1rem;
+    } //ul
+  } //article
+  p {
+    margin: 1rem 0;
+  } //article
 } //.page-services
 .flightsearch {
   .container {
